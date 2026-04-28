@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Dark mode transitions */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Prevent flash of unstyled content on page load */
+html.dark {
+  color-scheme: dark;
+}
